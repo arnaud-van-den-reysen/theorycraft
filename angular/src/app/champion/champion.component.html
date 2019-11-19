@@ -1,0 +1,10 @@
+<!-- ça c'est champion-list  -->
+<ul>
+    <li *ngFor="let champion of champions">
+        <!-- <a [routerLink]="['/champion', champion.id]"> -->
+        <a routerLink="/champion/{{champion.id}}">
+            <app-champion-details [champion]="champion"></app-champion-details>
+        </a>
+    </li>
+</ul>
+
