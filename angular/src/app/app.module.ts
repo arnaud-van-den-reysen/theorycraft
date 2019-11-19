@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule }    from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +8,9 @@ import { ChampionComponent } from './champion/champion.component';
 import { ItemComponent } from './item/item.component';
 import { ChampionDetailsComponent } from './champion-details/champion-details.component';
 import { ChampionListComponent } from './champion-list/champion-list.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ChampionListComponent } from './champion-list/champion-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatCheckboxModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
